@@ -1,0 +1,9 @@
+@Config : 配置文件文件夹
+@Database : 数据库文件文件夹
+@Function : 主程序文件文件夹
+@Logging : 日志文件文件夹
+@Verify : 验证文件文件夹
+@Verify.images : 验证码文件文件夹
+1. 缓存数据进入mongo, 设置is_new字段伟True.
+2. 调用Function下的upload_mysql文件,找出is_new为True的字段,同步至mysql, 完成后重置该字段为False.
+3.
